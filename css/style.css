@@ -1,0 +1,367 @@
+:root {
+  --primary: #547cff;
+  --bg: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg);
+  font-family: sans-serif;
+  color: #101010;
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--primary) 0.5px solid;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(1, 1, 1, 0.8);
+}
+.navbar .navbar-logo {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+.navbar .navbar-nav a {
+  color: #fff;
+  margin: 0 1.7rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-weight: 100;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  border-bottom: var(--primary) 0.1rem solid;
+  display: block;
+  padding-bottom: 0.5rem;
+  transform: scaleX(0);
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  display: inline-block;
+  margin: 0 0.3rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+/* navbar start */
+
+/* hero section start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(/img/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+.hero .content h1 {
+  font-size: 5em;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  color: #101010;
+}
+.hero .content h1 span {
+  color: var(--primary);
+}
+.hero .content p {
+  font-size: 1.5rem;
+  color: #101010;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  padding: 1.7rem 0;
+}
+.hero .cta {
+  font-size: 1.3rem;
+  border-radius: 7px;
+  background-color: var(--primary);
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3 0.5);
+  display: inline-block;
+  color: #101010;
+}
+
+/* hero section end*/
+
+/* about section start  */
+.about {
+  padding: 9rem 7% 1.4rem;
+}
+.about h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about h2 span {
+  color: var(--primary);
+}
+.about .row {
+  display: flex;
+  border-radius: 20px;
+  padding: 10rem 4rem;
+  background-color: #dfdfdf;
+}
+.about .row .about-img img {
+  width: 90%;
+  height: 120%;
+  border-radius: 20px;
+}
+.about .row .content {
+  display: inline-block;
+}
+.about .row .content h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.about .row .content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* about section end */
+
+/* produk Section start */
+.produk {
+  padding: 9rem 7% 1.4rem;
+}
+.produk h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.produk h2 span {
+  color: var(--primary);
+}
+.produk .row {
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 7rem;
+}
+.produk .row .content {
+  align-items: center;
+  justify-self: center;
+  background-color: #dfdfdf;
+  padding: 4rem 5rem;
+  border-radius: 20px;
+  margin: 1.5rem 1.5rem;
+}
+.produk .row .content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.produk .row .content p {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.produk .row .content .btn {
+  text-align: center;
+  display: flex;
+  margin: 0 3.5rem;
+}
+.produk .row .content button {
+  background-color: var(--primary);
+  padding: 1rem 1rem;
+  border-radius: 20px;
+}
+
+/* produk Section end */
+
+/* kontak section start */
+.kontak {
+  padding: 9rem 7% 1.4rem;
+}
+.kontak h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.kontak h2 span {
+  color: var(--primary);
+}
+
+.kontak .container {
+  height: 500px;
+  background-color: #dfdfdf;
+  display: flex;
+  padding: 5rem 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.kontak .container .form-box .input-group {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kontak .container button {
+  text-align: center;
+  display: flex;
+  margin: 0 6.5rem;
+  font-size: 1.3rem;
+  padding: 1.1rem 4rem;
+  border-radius: 20px;
+  background-color: var(--primary);
+  box-shadow: 1px 1px 3px rgba(1, 1, 3 0.5);
+  cursor: pointer;
+}
+
+/* kontak section end */
+/* footer start */
+.social-links {
+  margin-top: 30px;
+  margin: 2rem 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 1.3rem;
+  color: #101010;
+}
+footer {
+  margin-top: 50px;
+  background: #dfdfdf;
+  color: #101010;
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 1.5rem;
+}
+
+/* footer end */
+
+/* media queries start */
+
+/* desktop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 80.2%;
+  }
+  #navbar-extra {
+    display: none;
+  }
+}
+/* desktop */
+
+/* laptop */
+@media (max-width: 1280px) {
+  html {
+    font-size: 70%;
+  }
+}
+/* laptop*/
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #navbar-extra {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: black;
+    height: 100vh;
+    width: 50%;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.7rem;
+  }
+  .navbar .navbar-logo a {
+    font-size: 2.6rem;
+  }
+  .about .row .about-img img {
+    width: 90%;
+    height: 90%;
+    margin: 0 0.7%;
+  }
+  .about .row .content h3 {
+    margin-bottom: 0.8rem;
+  }
+  .about .row {
+    padding: 9rem 5rem;
+    align-items: center;
+  }
+  .produk .row .content {
+    margin: 1.5rem 2rem;
+  }
+}
+
+/* tablet */
+
+/*mobile-phone */
+@media (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+  #navbar-extra {
+    display: block;
+  }
+}
+
+/* /mobile-phone*/
+
+/* media queries end*/
